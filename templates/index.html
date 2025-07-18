@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crypto Liquidity Prediction</title>
+</head>
+<body>
+    <h2>Predict Cryptocurrency Liquidity</h2>
+    <form action="/predict" method="post">
+        Coin: <input type="text" name="coin"><br><br>
+        Symbol: <input type="text" name="symbol"><br><br>
+        Volume: <input type="number" step="any" name="volume"><br><br>
+        Market Cap: <input type="number" step="any" name="market_cap"><br><br>
+        1 Hour Return (%): <input type="number" step="any" name="1h"><br><br>
+        24 Hour Return (%): <input type="number" step="any" name="24h"><br><br>
+        7 Day Return (%): <input type="number" step="any" name="7d"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
